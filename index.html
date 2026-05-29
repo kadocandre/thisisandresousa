@@ -1288,11 +1288,10 @@
         color: var(--yellow);
       }
 
-      /* Dark mode: yellow text by default, ink text on white bg on hover */
-      body.dark .hd-nav ul li a.link          { color: var(--yellow); }
-      body.dark .hd-nav ul li a.link:hover    { background: var(--white); color: var(--ink); }
-      body.dark .ft-socials a.link            { color: var(--yellow); }
-      body.dark .ft-socials a.link:hover      { background: var(--white); color: var(--ink); }
+      /* Dark mode hover: white bg, dark brown text */
+      body.dark .hd-nav ul li a.link:hover    { background: var(--white) !important; color: #1a110e !important; }
+      body.dark .ft-socials a.link:hover      { background: var(--white) !important; color: #1a110e !important; }
+      body.dark .hd-nav ul li a.link       { border-color: rgba(247,247,240,0.15); }
       /* Hide the old inline dark mode toggle row */
       .dark-mode-row { display: none; }
 
@@ -1340,8 +1339,8 @@
       }
       .ft-socials a.link:hover { transform: none; background: var(--ink); color: var(--yellow); }
 
-      /* Dark mode moon button: stays dark brown with light icon */
-      body.dark #mobile-dark-btn { background: #1a110e; color: #F7F7F0; }
+      /* Dark mode moon button: white bg, dark brown icon */
+      body.dark #mobile-dark-btn { background: #F7F7F0 !important; color: #1a110e !important; }
 
       /* ── Disable custom cursor on mobile ── */
       * { cursor: auto !important; }
